@@ -1,0 +1,26 @@
+.container {    
+    background-color:#2F4F4F;
+    color: white;
+}
+
+.table {
+    color: white;
+}
+
+body {
+    /*background-color: coral;*/
+    background-color: rgb(177, 171, 87);
+}
+
+.navbar-brand {
+    display: flex;
+    color: white;
+}
+
+.navbar {
+    display: inline;
+    justify-content: center;
+}
+
+
+

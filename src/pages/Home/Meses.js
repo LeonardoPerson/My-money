@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 import Rest from '../../utils/rest'
 
 const baseURL = 'https://mymoney-leonardo.firebaseio.com/'
@@ -7,8 +7,13 @@ const {useGet} = Rest(baseURL)
 
 const Meses = () => {    
     const data = useGet('meses')
+
     if(data.loading){
         return <span>Carregando . . .</span>
+    }
+
+    if(data.error && data.error === 'Permission denied'){
+        return <Redirect to = '/login'/>
     }
 
     if(Object.keys(data.data).length > 0){     
@@ -17,7 +22,6 @@ const Meses = () => {
                 <thead>
                     <tr>
                     <th>Mês</th>
-
                     <th>Previsão Entrada</th>
                     <th>Entrada</th>
                     <th>Previsão Saída</th>
@@ -33,7 +37,6 @@ const Meses = () => {
                             return (
                                 <tr key={mes}>
                                     <td><Link to={`/movimentacoes/${mes}`}>{mes}</Link></td>
-                                    <td>{mes}</td>
                                     <td>{data.data[mes].previsao_entrada}</td>
                                     <td>{data.data[mes].entradas}</td>
                                     <td>{data.data[mes].previsao_saida}</td>

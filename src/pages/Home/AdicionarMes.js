@@ -11,6 +11,7 @@ const AdicionarMes = () => {
     const [redir, setRedir] = useState('') 
     const anos = []
     const meses = []
+
     for(let i = minAno; i<= maxAno; i++){
         anos.push(i)
     }
@@ -31,7 +32,7 @@ const AdicionarMes = () => {
     }
 //-----------------------------------------------------------------------
     return (
-        <>
+        <div>
             <h2>Adicionar Mês</h2>
             <select ref={refAno}>
                 {anos.map(ano => <option key ={ano} value={ano}>{ano}</option>)}               
@@ -41,7 +42,7 @@ const AdicionarMes = () => {
                 {meses.map(zeroPad).map(mes => <option key={mes} value={mes}>{mes}</option>)}                
             </select>
             <button onClick={verMes}>Adicionar Mês</button>
-        </>
+        </div>
 
     )
 }
