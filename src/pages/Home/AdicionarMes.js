@@ -33,7 +33,7 @@ const AdicionarMes = () => {
 //-----------------------------------------------------------------------
     return (
         <div>
-            <h2>Adicionar Mês</h2>
+            <h2>Lista de Compromissos por Mês</h2>
             <select ref={refAno}>
                 {anos.map(ano => <option key ={ano} value={ano}>{ano}</option>)}               
             </select>
