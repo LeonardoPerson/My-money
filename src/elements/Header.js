@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react'
 import {Link, Redirect} from 'react-router-dom'
 
 
-
-
 const Header = () => {
     const [logado, setLogado] = useState(false)
     useEffect(() => {
@@ -28,7 +26,7 @@ const Header = () => {
                 { logado &&
                 <ul className='navbar-nav mr-auto'>
                     <li className='nav-item'>
-                        <button onClick={logout} type='button' className='btn nav-link'>Sair</button>
+                        <button onClick={logout} type='button' className='btn nav-link navbar-brand'>Sair</button>
                     </li>
                 </ul>
                 }
