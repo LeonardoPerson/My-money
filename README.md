@@ -11,7 +11,7 @@ Após a adição, valores positivos ou negativos com suas respectivas descriçõ
 <img src="/src/Image/telaadicaodemes.png"> <br/><br/>
 Ao clicar em "My Money" na parte superior, a lista de compromissos de todos os meses cadastrados é exibida.  <br/>
 Valores positivos constarão na coluna "Entradas", os negativos constarão em "saídas".<br/><br/>
-<img src="/src/Image/telaadicaodemes.png"> 
+<img src="/src/Image/telaprincipal.png"> 
 
 
 
