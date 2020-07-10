@@ -6,20 +6,13 @@ import AdicionarMovimentacao from './AdicionarMovimentacao'
 
 //////////////////////////////////////////////////////////////////
 
-const Movimentacoes = ({match}) => {
-    
+const Movimentacoes = ({match}) => {    
     const {movimentacoes, salvarNovaMovimentacao, removerMovimentacao} = useMovimentacaoApi(match.params.data)   
-    //gestão do formulário
-   
-    //----------------------------------------------------------------------------
-
-    //----------------------------------------------------------------------------
     const salvarMovimentacao = async(dados) => {        
             await salvarNovaMovimentacao(dados)        
             movimentacoes.refetch()
             await sleep(2000)
-            //infoMes.refetch()  
-            
+            //infoMes.refetch()              
     }
     //------------------------------------------------------------------------------
     const sleep = time => new Promise(resolve => setTimeout(resolve, time))
@@ -29,13 +22,11 @@ const Movimentacoes = ({match}) => {
         await sleep(2000)
         //infoMes.refetch()        
     }
-    //----------------------------------------------------------------------------
-    
+    //----------------------------------------------------------------------------    
 
     if(movimentacoes.error === 'Permission denied'){
         return <Redirect to='/login' />
     }
-
 
     //----------------------------------------------------------------------------
     return (
@@ -43,14 +34,14 @@ const Movimentacoes = ({match}) => {
             <h1>Movimentações</h1>
             <InfoMes data={match.params.data} />
        
-            <table className='table'>
-                <thead>
+            <table className='table' >
+                <thead  className='text-center'>
                     <tr>
                         <th>Descrição</th>
                         <th>Valor</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody  className='text-center'>
                     {movimentacoes.data &&
                         Object
                         .keys(movimentacoes.data)
@@ -58,7 +49,7 @@ const Movimentacoes = ({match}) => {
                             return (
                                 <tr key={movimentacao}>
                                     <td>{movimentacoes.data[movimentacao].descricao}</td>
-                                    <td className='text-right'>
+                                    <td className='text-center'>
                                         {movimentacoes.data[movimentacao].valor} {'  '}
                                         <button className='btn btn-danger' onClick={() => removerMovimentacaoClick(movimentacao)}>-</button>
                                     </td>

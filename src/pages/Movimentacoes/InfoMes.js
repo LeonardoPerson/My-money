@@ -18,8 +18,8 @@ const InfoMes = ({data}) => {
     if(infoMes.data){
         return (
             <div>
-                <span>Previsão entrada: {infoMes.data.previsao_entrada} <input type='text' onBlur={alterarPrevisaoEntrada}/></span> / Previsão saída: {infoMes.data.previsao_saida} <input type='text' onBlur={alterarPrevisaoSaida}/><br />
-                Entradas: {infoMes.data.entradas} / Saídas: {infoMes.data.saidas}
+                <span>Previsão entrada: {infoMes.data.previsao_entrada} <input type='text' onBlur={alterarPrevisaoEntrada}/></span>    Previsão saída: {infoMes.data.previsao_saida} <input type='text' onBlur={alterarPrevisaoSaida}/><br />
+                Entradas: {infoMes.data.entradas} <br/> Saídas: {infoMes.data.saidas}
             </div>
         )
 
