@@ -8,6 +8,8 @@ O My-Money é uma aplicação web para controle financeiro, contendo sistema de 
 Compromissos podem ser adicionados pelo botão "Adicionar Mês" dentro de cada mês escolhido na lista. <br/><br/>
 <img src="/src/Image/adicionarMes.png"> <br/><br/>
 Após a adição, valores positivos ou negativos com suas respectivas descrições podem ser adicionados. 
+<img src="/src/Image/telaadicaodemes.png"> <br/><br/>
+Ao clicar em "My Money" na parte superior, a lista de compromissos de todos os meses cadastrados é exibida.  <br/>
 Valores positivos constarão na coluna "Entradas", os negativos constarão em "saídas".<br/><br/>
 <img src="/src/Image/telaadicaodemes.png"> 
 
