@@ -1,7 +1,7 @@
 As principais tecnologias que compõem a aplicação são: ReactJs e NodeJs. São utilizados hooks. O sistema de login foi feito em JWT. Algumas estilizações foram feitas com Bootstrap e outras com arquivo de CSS próprio. Este projeto foi iniciado com Create React App.
 
 O Firebase foi utilizado para armazenamento de dados.
-A aplicação pode ser acessada em: https://mymoney-leonardo.web.app/
+A aplicação pode ser acessada pelo modo de desenvolvimento com npm start sendo executado pelo diretório raiz do projeto. 
 
 O My-Money é uma aplicação web para controle financeiro, contendo sistema de login com email e senha. <br/><br/>
 <img src="/src/Image/home.png"> <br/><br/>
