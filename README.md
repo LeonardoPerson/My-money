@@ -1,7 +1,7 @@
-As principais tecnologias que compõem a aplicação são: ReactJs e NodeJs. São utilizados hooks. O sistema de login foi feito em JWT. Algumas estilizações foram feitas com Bootstrap e outras com arquivo de CSS próprio. Este projeto foi iniciado com Create React App.
+As principais tecnologias que compõem a aplicação são ReactJs e NodeJs. O sistema de login foi feito em JWT. Algumas estilizações foram feitas com Bootstrap e outras com arquivo CSS. O projeto tem como destaque a utilização de hooks personalizados, sendo "useDelete" utilizado para remoção de dados, "useGet" para a busca de dados e "usePost" para a entrada de novos dados. Além da criação desses hooks, temos os tradicionais useEffect e useReducer. 
 
-O Firebase foi utilizado para armazenamento de dados.
-A aplicação pode ser acessada pelo modo de desenvolvimento com npm start sendo executado pelo diretório raiz do projeto. 
+Uma api do Firebase é consumida para a manipulação dos dados pelos hooks personalizados.
+A aplicação pode ser acessada pelo modo de desenvolvimento utilizando npm start no diretório raiz do projeto. 
 
 O My-Money é uma aplicação web para controle financeiro, contendo sistema de login com email e senha. <br/><br/>
 <img src="/src/Image/home.png"> <br/><br/>
