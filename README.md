@@ -1,6 +1,6 @@
 ***APLICAÇÃO EM MANUTENÇÃO***<br/>
 
-As principais tecnologias que compõem a aplicação são ReactJs e NodeJs. O sistema de login foi feito em Json Web Token em conjunto com o sistema de autenticação do Firebase.<br/> Algumas estilizações foram feitas com Bootstrap e outras com arquivo CSS. <br/>O projeto tem como destaque a utilização de hooks personalizados, sendo "useDelete" utilizado para remoção de dados, "useGet" para a busca de dados e "usePost" para a entrada de novos dados. Cada um desses hooks foram estruturados de modo a possibilitar a comunicação via api do Firebase, objetivando a maniputação de dados. Além da criação desses hooks, temos os tradicionais useEffect e useReducer. <br/>
+As principais tecnologias que compõem a aplicação são ReactJs e NodeJs. O sistema de login foi feito em Json Web Token em conjunto com o sistema de autenticação do Firebase.<br/> Algumas estilizações foram feitas com Bootstrap e outras com arquivo CSS. <br/>O projeto tem como destaque a utilização de hooks personalizados, sendo "useDelete" utilizado para remoção de dados, "useGet" para a busca de dados e "usePost" para a entrada de novos dados. Cada um desses hooks foram estruturados de modo a possibilitar a comunicação via api do Firebase, objetivando a maniputação de dados. Além da criação desses hooks, temos os tradicionais useState, useEffect, useReducer e useRef. <br/>
 
 A aplicação pode ser acessada pelo modo de desenvolvimento utilizando npm start no diretório raiz do projeto. 
 
